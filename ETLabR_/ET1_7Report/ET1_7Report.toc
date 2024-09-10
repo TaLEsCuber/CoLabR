@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}ETX 实验名称××× \hskip 1em\relax \heiti 预习报告}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}实验预习题}{5}{subsection.1.1}%
+\contentsline {section}{\numberline {2}ET7 半导体器件传输特性研究 \hskip 1em\relax \heiti 实验记录}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}实验内容、步骤与结果}{8}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}操作步骤记录}{8}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}}{8}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}原始数据记录}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}实验过程遇到问题及解决办法}{9}{subsection.2.3}%
+\contentsline {section}{\numberline {3}ETX 实验名称××× \hskip 1em\relax \heiti 分析与讨论}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}实验数据分析}{10}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}}{10}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}}{10}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}}{10}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}实验后思考题}{10}{subsection.3.2}%
+\contentsline {section}{\numberline {4}ETX 实验名称××× \hskip 1em\relax \heiti 结语}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}实验心得和体会、意见建议等}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}参考文献}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}附件及实验相关的软硬件资料等}{11}{subsection.4.3}%
+\contentsfinish 

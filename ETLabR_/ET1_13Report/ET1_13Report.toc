@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}ET1-13 整流滤波与稳压电路 \hskip 1em\relax \heiti 预习报告}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}实验目的}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}仪器用具}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}原理概述}{3}{subsection.1.3}%
+\contentsline {section}{\numberline {2}ET1-13 整流滤波与稳压电路 \hskip 1em\relax \heiti 实验记录}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}实验内容、步骤与结果}{8}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}操作步骤记录}{8}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}原始数据记录}{13}{subsection.2.2}%
+\contentsline {section}{\numberline {3}ET1-13 整流滤波与稳压电路 \hskip 1em\relax \heiti 分析与讨论}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}实验数据分析}{14}{subsection.3.1}%
+\contentsline {section}{\numberline {4}ET1-13 整流滤波与稳压电路 \hskip 1em\relax \heiti 结语}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}参考文献}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}附件及实验相关的软硬件资料等}{20}{subsection.4.2}%
+\contentsfinish 
