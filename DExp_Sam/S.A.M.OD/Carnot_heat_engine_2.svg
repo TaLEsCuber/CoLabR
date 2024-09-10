@@ -1,0 +1,40 @@
+<svg width="840" height="370" font-family="sans-serif" font-size="25" text-anchor="middle" xmlns="http://www.w3.org/2000/svg">
+<style>.big{font-size:40px; font-style:italic}</style>
+<marker id="arrow" orient="auto" overflow="visible"><path d="M3 0-5 2.5v-5"/></marker>
+<g stroke="#000">
+<g fill="#FFF">
+<path d="M35 35H160V235H35M805 35H680V235H805" stroke-width="3"/>
+<circle cx="420" cy="135" r="100" stroke-width="2.5"/>
+</g>
+<g stroke-width="2" marker-end="url(#arrow)">
+<path d="M160 135H310"/>
+<path d="M520 135H670"/>
+<path d="M420 235V329"/>
+</g>
+</g>
+<g fill="#F00">
+<text class="big" x="77.61" y="146.63">T</text>
+<switch>
+<text x="92" y="157.43" systemLanguage="fr">C</text>
+<text x="92" y="157.43">H</text>
+</switch>
+</g>
+<g fill="#00A4FF">
+<text class="big" x="731.49" y="146.93">T</text>
+<switch>
+<text x="745.87" y="157.73" systemLanguage="fr">F</text>
+<text x="745.87" y="157.73">C</text>
+</switch>
+</g>
+<text class="big" x="242.03" y="114.37">Q</text>
+<switch>
+<text x="264.42" y="125.17" systemLanguage="fr">C</text>
+<text x="264.42" y="125.17">H</text>
+</switch>
+<text class="big" x="596.88" y="111.38">Q</text>
+<switch>
+<text x="619.27" y="122.18" systemLanguage="fr">F</text>
+<text x="619.27" y="122.18">C</text>
+</switch>
+<text class="big" x="454.73" y="305.97">W</text>
+</svg>

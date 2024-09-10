@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}摘要}{1}{section.1}%
+\contentsline {section}{\numberline {2}背景介绍}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}热力学第一定律与热力学第二定律}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}热机}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}基本原理与实验方案}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}基本原理}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}实验方案}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}测量方程}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}误差分配与可行性讨论}{8}{subsection.3.4}%
+\contentsline {section}{\numberline {4}实验装置搭建}{9}{section.4}%
+\contentsline {section}{\numberline {5}数据分析、误差讨论}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}实验一 \ 测量热机外负载特性}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Seebeck系数测量}{15}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}TEC内阻与输出功率分析}{18}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}双TEC耦合热电堆}{20}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}基于热力学建模的散热修正}{22}{subsection.5.5}%
+\contentsline {section}{\numberline {6}总结及存在问题}{24}{section.6}%
+\contentsline {section}{\numberline {7}附录}{25}{section.7}%
+\contentsfinish 
