@@ -10,15 +10,15 @@
 		\hline
 		Name： & 杨舒云 \& 戴鹏辉 & Student number： & 22344020 \& 22344016\\
 		\hline
-		Room temperature： & \degree C & Experimental location： & A522 \\
+		Room temperature： & 30\degree C & Experimental location： & A522 \\
 		\hline
 		Student's Signature：& \textbf{In Attachment} & Score： &\\
 		\hline
-		Experiment time：& 2024// & Teacher's Signature：&\\
+		Experiment time：& 2024/9/25 & Teacher's Signature：&\\
 		\hline
 	\end{tabularx}
 \end{table}
-\section{XXX \\ Experimental Record}
+\section{ET2-1 Welding and Debugging of Bluetooth Speakers \\ Experimental Record}
 
 
 %---------------------------------------------------------------------
@@ -28,46 +28,80 @@
 % 操作步骤
 \subsubsection{Operations}
 \begin{enumerate}
-	\item 
+	\item According to the instructions, complete the welding of the Bluetooth speaker circuit and the assembly of the speaker as a whole. The following is a description of the welding process:
+	\item Measure the closed-loop gain of the power amplifier section of the Bluetooth speaker circuit.
+	\item Finally, we referred to the soldered Bluetooth speaker circuit and PCB, taught ourselves KICAD, and copied the PCB.
 \end{enumerate}	
 
 % 实验结果
 \subsubsection{Display}
 
-The results are shown in \cref{tab:tab1}.
+We measured the output voltage variation with input voltage at a fixed frequency of 1kHz and the output voltage variation with frequency at a fixed input voltage of 50.0Vrms.
 
-\begin{enumerate}
-	\item \begin{table}[h]
-		\centering
-		\caption{Examples of table}
-		\label{tab:tab1}
-		\begin{tabular}{|c|c|c|c|c|c|}
-			\hline
-			组1/序号i & 1 & 2 & 3 & 4 & 5 \\
-			$v_{1i}(m/s)$ & 1.26 & 1.08 & 1.00 & 0.75 & 0.38 \\
-			$f_{1i}(Hz)$ & 40073 & 40127 & 40105 & 40088 & 40066 \\
-			\hline
-			组2/序号i & 1 & 2 & 3 & 4 & 5 \\
-			$v_{2i}(m/s)$ & 1.21 & 1.06 & 0.99 & 0.52 & 0.57 \\
-			$f_{2i}(Hz)$ & 40143 & 40125 & 40084 & 40080 & 40067 \\
-			\hline
-			组3/序号i & 1 & 2 & 3 & 4 & 5 \\
-			$v_{3i}(m/s)$ & 1.15 & 0.98 & 0.78 & 0.59 & 0.36 \\
-			$f_{3i}(Hz)$ & 40135 & 40115 & 40092 & 40070 & 40044 \\
-			\hline
-		\end{tabular}
-	\end{table}		
-\end{enumerate}
+The results are shown in \cref{tab:tab1} and \cref{tab:tab2}.
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\( u_{in} \)/mVrms & 10.0 & 20.0 & 30.0 & 40.0 & 50.0 & 60.0 & 70.0 & 80.0 & 90.0 & 100.0 \\
+		\hline
+		\( u_{out} \)/mVrms & 80.1 & 159.5 & 239.1 & 320.0 & 400.1 & 480.5 & 560.5 & 640.5 & 720.7 & 800.0 \\
+		\hline
+	\end{tabular}
+	\caption{The output voltage variation with input voltage at a fixed frequency of 1kHz}
+	\label{tab:tab1}
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+		\hline
+		frequency/Hz & 20 & 35 & 70 & 100 & 200 & 500 & 700 & 1000 \\
+		\hline
+		\( u_{out} \)/Vrms & 187.4 & 271.9 & 351.9 & 374.4 & 393.6 & 399.9 & 400.6 & 400.9 \\
+		\hline
+	\end{tabular}
+	\caption{The output voltage variation with frequency at a fixed input voltage of 50.0Vrms}
+	\label{tab:tab2}
+\end{table}
+
+PCB:??
 
 
 %---------------------------------------------------------------------
 % 原始数据
+\clearpage
 \subsection{Original Data}
-The original data in the experimental notebook is shown in %\cref{} (signed).
+The original data in the experimental notebook is shown in \cref{fig:fig-o} (signed).
 
-See the \textbf{Attachment} section for the clean of the experimental bench desktop (%\cref{}).
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{ET2_1_original_data.jpg}
+	\caption{Original data}
+	\label{fig:fig-o}
+\end{figure}
 
-Other raw data are shown in %\cref{}.
+\clearpage
+The welded and assembled Bluetooth speaker is shown in the \cref{fig:finished_product1} and \cref{fig:finished_product2}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{ET2_1_finished_product1.jpg}
+	\caption{Finished Bluetooth speaker}
+	\label{fig:finished_product1}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{ET2_1_finished_product2.jpg}
+	\caption{Finished Bluetooth speaker}
+	\label{fig:finished_product2}
+\end{figure}
+
+%See the \textbf{Attachment} section for the clean of the experimental bench desktop (%\cref{}).
+
+%Other raw data are shown in %\cref{}.
 
 
 %---------------------------------------------------------------------

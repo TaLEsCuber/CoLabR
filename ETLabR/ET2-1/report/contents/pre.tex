@@ -2,14 +2,16 @@
 
 % 预习报告	
 \setcounter{section}{0}
-\section{XXX \\ Preview Report}
+\section{ET2-1 Welding and Debugging of Bluetooth Speakers \\ Preview Report}
 
 
 %---------------------------------------------------------------------
 % 实验目的
 \subsection{Purpose}
 \begin{enumerate}
-	\item 
+	\item Learn and master basic welding techniques, weld and debug Bluetooth speakers;
+	\item Review relevant knowledge of electronic technology and analyze the circuits used in the experiment;
+	\item Learn EDA software and draw relevant PCB boards.
 \end{enumerate}
 
 
@@ -24,67 +26,46 @@
 		\hline
 		Number & Name & Quantity & Main parameters (model, measurement range, measurement accuracy, etc.) \\
 		\hline
-		1 & 上海宜准公司VQP01真空平台 & 1 & 针对帕邢实验、四极质谱实验等实验项目而设计的一台综合实验装置，该装置由真空放电腔体、机械泵、分子泵、高压电源、四极质谱仪、真空计以及击穿电压测量系统等装置构成。 \\
+		1 & Circuit related instruments & 1 & Provided by the laboratory, as shown in \cref{fig:instruments} \\
+		\hline
+		2 & Analog electronics related instruments & Several & Including but not limited to breadboard, DuPont line, analog electronic technology box, oscilloscope, signal generator and multimeter, etc. \\
+		\hline
+		1 & Welding related instruments & 1 & Provided by the laboratory \\
 		\hline
 	\end{tabular}
 \end{table}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{ET2_1_instruments.png}
+	\caption{Circuit related instruments}
+	\label{fig:instruments}
+\end{figure}
 
 
 %---------------------------------------------------------------------
 % 原理概述
 \subsection{Principle}
 \begin{enumerate}
-	\item 
+	\item Basic amplifier circuit
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.95\textwidth]{ET2_1_principle1.jpg}
+	\end{figure}
+	
+	\clearpage
+	\item Power amplifier circuit
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.9\textwidth]{ET2_1_principle2.jpg}
+	\end{figure}
+	
+	\item Operational Amplifier
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.9\textwidth]{ET2_1_principle3.jpg}
+	\end{figure}
 \end{enumerate}
-
-
-%---------------------------------------------------------------------
-% 实验前思考题
-\subsection{Thinking Before Experiment}
-
-% 思考题1
-\begin{question}
-	这是第一个思考题
-\end{question}
-
-% 思考题2
-\begin{question}
-	这是第二个思考题
-\end{question}
-
-% 思考题3
-\begin{question}
-	这是第三个思考题
-\end{question}
-
-\highlight{这一行用来展示高亮。}
-
-\begin{ubox}{和老婆约会的小曲}
-	（以下也用于展示更改后的无序列表）
-	\begin{itemize}
-		\item 使一颗心免于哀伤；
-		\item 若我不曾见过太阳。
-	\end{itemize}
-\end{ubox}
-
-\highlight[fred]{接下来用于展示代码：}
-\begin{lstlisting}[style=pythonstyle,caption=代码记录示例]
-	# 示例代码
-	import matplotlib.pyplot as plt
-	import numpy as np
-	
-	# Data for plotting
-	t = np.arange(0.0, 2.0, 0.01)
-	s = 1 + np.sin(2 * np.pi * t)
-	
-	fig, ax = plt.subplots()
-	ax.plot(t, s)
-	
-	ax.set(xlabel='time (s)', ylabel='voltage (mV)',
-	title='About as simple as it gets, folks')
-	ax.grid()
-	
-	fig.savefig("test.png")
-	plt.show()
-\end{lstlisting}
-
