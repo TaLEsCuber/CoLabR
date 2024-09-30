@@ -12,8 +12,8 @@
 \contentsline {subsection}{\numberline {3.1}Data Processing}{11}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Analysis}{11}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Discussion}{15}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Conclusion}{15}{subsubsection.3.1.3}%
-\contentsline {section}{\numberline {4}ET2-1 Welding and Debugging of Bluetooth Speakers \\ The End}{18}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Summary, Thoughts \& Acknowledgments}{18}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Attachment}{18}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Conclusion}{19}{subsubsection.3.1.3}%
+\contentsline {section}{\numberline {4}ET2-1 Welding and Debugging of Bluetooth Speakers \\ The End}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Summary, Thoughts \& Acknowledgments}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Attachment}{20}{subsection.4.2}%
 \contentsfinish 

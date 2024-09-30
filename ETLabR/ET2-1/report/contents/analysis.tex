@@ -152,6 +152,45 @@ In this part, we will analyze and discuss the data we got in \cref{tab:tab1} and
 	
 	\item What follows is a discussion of the above results.
 	
+	In \cref{fig:dicussion1}, we performed a linear fit on the experimental data. From the fitting parameters, we can see that the measured value of the voltage gain is 8.01, which is slightly different from the theoretical value of 8.51 we calculated, which is also reflected in \cref{fig:dicussion4}. On the other hand, we can see from \cref{fig:dicussion2} that the voltage gain changes randomly with the output voltage and there is no obvious functional relationship, which shows that our measurement still has a certain degree of reliability.
+	
+	In \cref{fig:dicussion3}, we visualize the relationship between the voltage gain and the frequency. It is worth noting that, as shown in the previous theoretical analysis, -3dB is right around 35Hz. In addition, we performed a fitting, and the figure shows that the values ​​of the components obtained by the fitting are somewhat different from the actual values.
+	
+	In \cref{fig:dicussion4}, we compare our measured results with our calculated theoretical predictions. Overall, the measured results are smaller. Especially in the low-frequency region, the measured voltage gain is significantly lower than the theoretically calculated value. The following are possible reasons and analysis for this difference:
+	\begin{itemize}
+		\item Capacitor deviation and ESR (equivalent series resistance)
+		
+		The theoretical curve is calculated based on ideal components, but in reality, capacitors will have manufacturing deviations and additional characteristics. For example, C3 (1.000 $\mu F$) in the figure may have a certain deviation and is not exactly 1 $\mu F$. In addition, the equivalent series resistance (ESR) of the capacitor will introduce additional losses, especially in the low-frequency band. These factors may affect the efficiency of the signal passing through the capacitor, resulting in reduced gain.
+		
+		\item Low-frequency impact of input coupling capacitor
+		
+		Amplifier circuits usually use coupling capacitors to isolate DC bias. These coupling capacitors have limited transmission capabilities for low-frequency signals. When the frequency is low, the impedance of the capacitor is large, which will limit the passage of the signal, resulting in signal attenuation and reduced gain. Therefore, at low frequencies, the actual measured gain may be lower than the theoretical value.
+		
+		\item Gain-bandwidth limitation of amplifier
+		
+		The gain-bandwidth product of LM4863 may be limited at low frequencies. Actual operational amplifiers usually have gain-bandwidth limitations in design. When the frequency is low, the gain is affected by the internal circuit characteristics of the amplifier, such as open-loop gain characteristics and frequency compensation. This may cause the gain in the low frequency band to be not as high as ideal.
+		
+		\item The influence of parasitic capacitance and wiring
+		
+		In actual circuits, parasitic capacitance and wiring inductance affect the frequency response of the amplifier circuit. Especially at low frequencies, the parasitic capacitance of the wiring may introduce phase shift and signal loss, resulting in low actual gain. In addition, the parasitic impedance present in the PCB wiring may interact with other components, thereby affecting the overall frequency response.
+		
+		\item Component accuracy in negative feedback network
+		
+		The theoretical gain in the figure is calculated based on the precise values ​​of R1 and R3. However, in actual circuits, the accuracy of these resistors (usually 5\% or 1\%) may have some deviation. Any slight deviation in the resistance value will change the proportion of negative feedback, resulting in the actual gain not being completely consistent with the theoretical calculated value, which may be more obvious at low frequencies.
+		
+		\item Temperature and power supply stability
+		
+		The performance of the amplifier circuit will also be affected by temperature changes, especially at low frequencies. The internal characteristics of the LM4863 are sensitive to temperature changes, which will affect the internal gain characteristics of the device, resulting in differences between the measured value and the theoretical value. In addition, the instability of the power supply voltage (ripple and noise) may also affect the gain at low frequencies.
+		
+		\item Test instrument and measurement error
+		
+		When measuring at low frequencies, the characteristics of the instrument itself may also affect the measurement results. For example, the low-frequency response of the signal source, the probe impedance of the oscilloscope, or the influence of the connecting line will cause certain errors in the measurement accuracy. These errors may not be obvious at high frequencies, but may be more prominent at low frequencies, resulting in deviations between the measured value and the theoretical value.
+		
+		\item Frequency response of coupling and decoupling capacitors
+		
+		The coupling capacitors (such as C4, C5) and decoupling capacitors (such as C1, C2) in the figure may also fail to fully function in the low frequency band. For example, the decoupling capacitors cannot fully eliminate low-frequency noise, which may affect the low-frequency gain of the amplifier. If the coupling capacitor is too small, it will have a great impact on the transmission of low-frequency signals, thereby reducing the low-frequency gain.
+	\end{itemize}
+	
 \end{enumerate}
 
 % 总结
