@@ -18,7 +18,7 @@
 		\hline
 	\end{tabularx}
 \end{table}
-\section{ET2-1 Welding and Debugging of Bluetooth Speakers \\ Experimental Record}
+\section{ET2-1 Welding and Debugging of Bluetooth Speakers \\  Experimental Record}
 
 
 %---------------------------------------------------------------------
@@ -29,6 +29,11 @@
 \subsubsection{Operations}
 \begin{enumerate}
 	\item According to the instructions, complete the welding of the Bluetooth speaker circuit and the assembly of the speaker as a whole. The following is a description of the welding process:
+		\begin{enumerate}
+			\item Solder the components one by one in the order shown in the tutorial.
+			\item It is important to note that some components have positive and negative electrodes, and the direction cannot be wrong. Usually the long foot represents the positive pole.
+			\item During the welding process, make sure to wear appropriate protective equipment, control the temperature and time, clean the solder joint and use the right amount of solder, and check the quality of the solder joint after welding to ensure the safety and quality of the welding.
+		\end{enumerate}
 	\item Measure the closed-loop gain of the power amplifier section of the Bluetooth speaker circuit.
 	\item Finally, we referred to the soldered Bluetooth speaker circuit and PCB, taught ourselves KICAD, and copied the PCB.
 \end{enumerate}	
@@ -68,7 +73,16 @@ The results are shown in \cref{tab:tab1} and \cref{tab:tab2}.
 
 As requested by the teacher, we did not measure the power gain, but we conducted a theoretical analysis, see the data \textbf{analysis} section for details.
 
-PCB:??
+PCB:
+
+After class, we used KiCAD and tried to copy the PCB drawing by referring to the datasheet of LM4863 chip and the schematic diagram of Bluetooth speaker, as shown in the \cref{fig:fig-PCB}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{ET2_1_PCB.png}
+	\caption{PCB drawing}
+	\label{fig:fig-PCB}
+\end{figure}
 
 
 %---------------------------------------------------------------------
@@ -110,6 +124,8 @@ The welded and assembled Bluetooth speaker is shown in the \cref{fig:finished_pr
 % 问题记录
 \subsection{Difficulties}
 \begin{enumerate}
-	\item 
+	\item Because it is the first time to use the soldering iron, the first class spent too much time to get familiar with the use of the soldering iron.
+	\item When measuring the amplifier of the circuit, pay attention to avoid the signal generator and oscilloscope, which will lead to short circuit of the measured component, so that it can not measure the signal correctly.
+	\item When measuring the magnification of the circuit, it is necessary to connect the USB power supply to provide the working voltage to the chip.
 \end{enumerate}
 % ---

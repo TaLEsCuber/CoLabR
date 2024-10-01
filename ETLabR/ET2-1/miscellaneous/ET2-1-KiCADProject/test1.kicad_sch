@@ -3012,7 +3012,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 192.532 87.63 90)
 			(effects
 				(font
@@ -3079,7 +3079,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 146.05 110.7948 0)
 			(effects
 				(font
@@ -3146,7 +3146,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 118.11 63.8048 0)
 			(effects
 				(font
@@ -3279,7 +3279,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 184.15 94.2848 0)
 			(effects
 				(font
@@ -3348,7 +3348,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 53.6448 86.36 0)
 			(effects
 				(font
@@ -3415,7 +3415,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 184.15 113.538 90)
 			(effects
 				(font
@@ -3617,7 +3617,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_Micro-B_Molex-105133-0031"
 			(at 30.48 68.58 0)
 			(effects
 				(font
@@ -3752,7 +3752,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 62.992 90.17 90)
 			(effects
 				(font
@@ -3886,7 +3886,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 118.11 71.4248 0)
 			(effects
 				(font
@@ -4097,7 +4097,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 171.45 110.7948 0)
 			(effects
 				(font
@@ -4230,7 +4230,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ET2-1-KiCADProject:LM4863"
 			(at 140.97 92.71 0)
 			(effects
 				(font
@@ -4410,7 +4410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical_SMD_Pin1Right"
 			(at 59.69 78.74 0)
 			(effects
 				(font
@@ -4482,7 +4482,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 117.602 92.71 90)
 			(effects
 				(font
@@ -4551,7 +4551,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Buzzer_Beeper:Speaker_CUI_CMR-1206S-67"
 			(at 205.74 83.82 0)
 			(effects
 				(font
@@ -4684,7 +4684,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 128.27 113.538 90)
 			(effects
 				(font
@@ -4820,7 +4820,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Buzzer_Beeper:Speaker_CUI_CMR-1206S-67"
 			(at 109.22 81.28 0)
 			(effects
 				(font
@@ -4956,7 +4956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal"
 			(at 148.59 101.6 0)
 			(effects
 				(font
