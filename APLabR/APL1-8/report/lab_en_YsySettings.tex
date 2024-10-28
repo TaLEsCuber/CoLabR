@@ -8,11 +8,11 @@
 \usetikzlibrary{calc}
 \usepackage{eso-pic}
 \AddToShipoutPictureBG{%
-	\begin{tikzpicture}[overlay,remember picture]
-		\draw[line width=0.6pt] % 边框粗细
-		($ (current page.north west) + (0.6cm,-0.6cm) $)
-		rectangle
-		($ (current page.south east) + (-0.6cm,0.6cm) $); % 边框位置
+\begin{tikzpicture}[overlay,remember picture]
+\draw[line width=0.6pt] % 边框粗细
+    ($ (current page.north west) + (0.6cm,-0.6cm) $)
+    rectangle
+    ($ (current page.south east) + (-0.6cm,0.6cm) $); % 边框位置
 \end{tikzpicture}}
 
 
@@ -85,20 +85,20 @@
 }
 %% 这是原版的，现在已经被注释掉了，不用看---------------------------------
 %\newtcolorbox[auto counter,number within=section]{question}[1][]{
-	%  top=2pt,bottom=2pt,arc=1mm,
-	%  boxrule=0.5pt,
-	%%   frame hidden,
-	%  breakable,
-	%  enhanced, %跨页后不会显示下边框
-	%  coltitle=fgrayblue!80!gray,
-	%  colframe=fbluegreen,
-	%  colback=fgraygreen!3!white,
-	%  drop fuzzy shadow,
-	%  title={Reflection Question~\thetcbcounter：\quad},
-	%  fonttitle=\bfseries,
-	%  attach title to upper,
-	%  #1
-	%}
+%  top=2pt,bottom=2pt,arc=1mm,
+%  boxrule=0.5pt,
+%%   frame hidden,
+%  breakable,
+%  enhanced, %跨页后不会显示下边框
+%  coltitle=fgrayblue!80!gray,
+%  colframe=fbluegreen,
+%  colback=fgraygreen!3!white,
+%  drop fuzzy shadow,
+%  title={Reflection Question~\thetcbcounter：\quad},
+%  fonttitle=\bfseries,
+%  attach title to upper,
+%  #1
+%}
 %% 这是原版的，现在已经被注释掉了，不用看---------------------------------
 
 % 高亮
@@ -130,7 +130,7 @@
 \fancypagestyle{plain}{\pagestyle{fancy}}
 \pagestyle{fancy}
 \lhead{SYSU.SPA \quad \textbf{Advanced Physics Laboratory \uppercase\expandafter{\romannumeral1}}} % 左边页眉
-\rhead{杨舒云 22344020 戴鹏辉 22344016} % 右边页眉
+\rhead{杨舒云、戴鹏辉、朱政鑫、马万成} % 右边页眉
 \cfoot{\thepage} % 页脚，中间添加页码
 
 
