@@ -7,15 +7,15 @@
 \contentsline {subsection}{\numberline {2.1}Content, Procedures \& Results}{26}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Operations}{26}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Display}{28}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}Original Data}{29}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Original Data}{28}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Difficulties}{29}{subsection.2.3}%
-\contentsline {section}{\numberline {3}APL1-3 氦氖激光综合实验 \\ Analysis \& Discussion}{32}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Data Processing}{32}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Analysis}{32}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Discussion}{36}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Reflections after Experiment}{39}{subsection.3.2}%
-\contentsline {section}{\numberline {4}APL1-3 氦氖激光综合实验 \\ The End}{43}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Summary, Thoughts \& Acknowledgments}{43}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Attachment}{43}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Schedule}{49}{subsection.4.3}%
+\contentsline {section}{\numberline {3}APL1-3 氦氖激光综合实验 \\ Analysis \& Discussion}{33}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Data Processing}{33}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Analysis}{33}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Discussion}{38}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Reflections after Experiment}{41}{subsection.3.2}%
+\contentsline {section}{\numberline {4}APL1-3 氦氖激光综合实验 \\ The End}{44}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Summary, Thoughts \& Acknowledgments}{44}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Attachment}{44}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Schedule}{50}{subsection.4.3}%
 \contentsfinish 

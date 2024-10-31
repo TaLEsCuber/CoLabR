@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.20)  31 OCT 2024 17:08
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.20)  31 OCT 2024 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1437,6 +1437,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout2 = `contents/log.aux'.
 
  (./contents/log.tex
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/lmr/m/n/10.95 22344020\TU/SimSun(0)/m/n/10.95 、| \TU/lmr/m/n/10.95 22344016\TU/SimSun(0)/m/n/10.95 、|
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 21.
@@ -1461,6 +1465,9 @@ File: images/APL1_8_Exp34.png Graphic file (type bmp)
 <images/APL1_8_Exp34.png>
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -1468,17 +1475,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [27]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 File: images/APL1_8_exp3_printscreen.png Graphic file (type bmp)
 <images/APL1_8_exp3_printscreen.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[28]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1501,7 +1502,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[29])
+[28])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[29]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1518,9 +1527,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [31]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[32]
 \openout2 = `contents/analysis.aux'.
 
  (./contents/analysis.tex
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\TU/lmr/m/n/10.95 22344020\TU/SimSun(0)/m/n/10.95 、| \TU/lmr/m/n/10.95 22344016\TU/SimSun(0)/m/n/10.95 、|
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 16.
@@ -1531,42 +1552,33 @@ File: images/APL1_8_exp3_analysis.png Graphic file (type bmp)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: images/APL1_8_exp4_analysis_lens.png Graphic file (type bmp)
-<images/APL1_8_exp4_analysis_lens.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[32
+[33
 
 
 
 ]
-File: images/APL1_8_exp4_analysis_nolens_1.png Graphic file (type bmp)
-<images/APL1_8_exp4_analysis_nolens_1.png>
+File: images/APL1_8_exp4_analysis_lens.png Graphic file (type bmp)
+<images/APL1_8_exp4_analysis_lens.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33]
+File: images/APL1_8_exp4_analysis_nolens_1.png Graphic file (type bmp)
+<images/APL1_8_exp4_analysis_nolens_1.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 File: images/APL1_8_exp4_analysis_nolens_2.png Graphic file (type bmp)
 <images/APL1_8_exp4_analysis_nolens_2.png>
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1610,6 +1622,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [38]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[39]
 File: images/APL1_8_exp4_analysis_zzx3.png Graphic file (type bmp)
 <images/APL1_8_exp4_analysis_zzx3.png>
 File: images/APL1_8_exp4_analysis_zzx1.png Graphic file (type bmp)
@@ -1627,14 +1647,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[39]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
 [40]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1643,7 +1655,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[41])
+[41]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1651,7 +1663,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[42]
+[42])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[43]
 \openout2 = `contents/end.aux'.
 
  (./contents/end.tex
@@ -1691,7 +1711,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[43
+[44
 
 
 
@@ -1703,7 +1723,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[44]
+[45]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 107.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 118.
@@ -1717,7 +1737,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[45
+[46
 
 ]
 Missing character: There is no ω (U+03C9) in font [lmmono10-regular]:!
@@ -1729,19 +1749,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[46
+[47
 
 ]
 Missing character: There is no λ (U+03BB) in font [lmmono10-regular]:!
 Missing character: There is no ω (U+03C9) in font [lmmono10-regular]:!
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[47]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1757,9 +1769,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[49
-
-])
+[49]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1769,21 +1779,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [50
 
+])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[51
+
 ] (./main.aux (./contents/front.aux) (./contents/pre.aux) (./contents/log.aux) (./contents/analysis.aux) (./contents/end.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 279F51221DCDD8B327C35580286D9B62;3223.
  ) 
 Here is how much of TeX's memory you used:
- 42681 strings out of 474773
- 943377 string characters out of 5761289
+ 42691 strings out of 474773
+ 943592 string characters out of 5761289
  2254842 words of memory out of 5000000
- 64097 multiletter control sequences out of 15000+600000
+ 64107 multiletter control sequences out of 15000+600000
  569559 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,12n,116p,770b,2096s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (50 pages).
+Output written on main.pdf (51 pages).
