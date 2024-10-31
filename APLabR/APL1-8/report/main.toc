@@ -2,7 +2,7 @@
 \contentsline {subsection}{\numberline {1.1}Purpose}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Instruments \& Equipment}{4}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Principle}{4}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Thinking Before Experiment}{22}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.4}Thinking Before Experiment}{20}{subsection.1.4}%
 \contentsline {section}{\numberline {2}APL1-3 氦氖激光综合实验 \\ Experimental Record}{26}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Content, Procedures \& Results}{26}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Operations}{26}{subsubsection.2.1.1}%

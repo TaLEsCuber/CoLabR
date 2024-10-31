@@ -39,11 +39,24 @@ The personal signature of the experimental report is shown in \cref{fig:name}.
 		\caption{signature2}
 		\label{fig:name-tales}
 	\end{minipage}
+	% \begin{minipage}{0.3\textwidth}
+	% 	\centering
+	% 	\includegraphics[width=\textwidth]{images/name_mwc}
+	% 	\caption{signature3}
+	% 	\label{fig:namemwc}
+	% \end{minipage}
+	\begin{minipage}{0.25\textwidth}
+		\centering
+		% 使用\rotatebox命令逆时针旋转90度
+		\rotatebox{90}{\includegraphics[width=\textwidth]{images/name_mwc}}
+		\captionof{figure}{signature3}
+		\label{fig:namemwc}
+	\end{minipage}
 	\begin{minipage}{0.3\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{images/name_mwc}
+		\includegraphics[width=\textwidth]{images/name_zzx}
 		\caption{signature3}
-		\label{fig:namemwc}
+		\label{fig:namezzx}
 	\end{minipage}
 	
 	\vspace{0.3cm} % 行距调整
@@ -90,6 +103,7 @@ The personal signature of the experimental report is shown in \cref{fig:name}.
 	
 \end{figure}
 
+\clearpage
 \begin{lstlisting}[style=pythonstyle,caption=核心代码记录]
 	# 读取数据
 	file_path = "spot-parameter_lens.xlsx"
@@ -121,6 +135,7 @@ The personal signature of the experimental report is shown in \cref{fig:name}.
 	print(f"Rayleigh Length (Z0): {Z_0:.2f} mm")
 \end{lstlisting}
 
+\clearpage
 \begin{lstlisting}[style=pythonstyle,caption=其它计算代码]
 	###
 	
