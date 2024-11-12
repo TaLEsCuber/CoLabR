@@ -1,0 +1,101 @@
+% !TEX root = ../main.tex
+
+% 实验记录	
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+		\hline
+		Major： & Physics & Grade： & 2022 \\
+		\hline
+		Name： & 杨舒云 & Student number： & 22344020\\
+		\hline
+		Room temperature： & \degree C & Experimental location： &  \\
+		\hline
+		Student Signature：& \textbf{In Attachment} & Score： &\\
+		\hline
+		Experiment time：& 2024/11/1 & Teacher's Signature：&\\
+		\hline
+	\end{tabularx}
+\end{table}
+\section{APL1-4 电子自旋共振实验 \\ Experimental Record}
+
+
+%---------------------------------------------------------------------
+% 实验过程记录
+\subsection{Content, Procedures \& Results}
+
+% 操作步骤
+\subsubsection{Operations}
+\begin{enumerate}
+	\item 观察磁共振信号并测定电子郎德因子
+	\begin{enumerate}
+		\item 将高斯计探头换成 DPPH 样品，调节双 T 调配器和短路活塞直至出现共振信号。
+		\item 调节励磁电源使磁感应强度 $B$ 在 3300 G 至 3338 G 范围内，微调直至信号最大。
+		\item 旋转频率计，记录每次信号跳动对应的微波频率 $f$。
+		\item 使用公式 $g = \frac{h f}{\mu_B B}$ 计算朗德因子 $g$。
+		\item 进行多组测量后，计算平均值和误差，并进行分析讨论。
+	\end{enumerate}
+	
+	\item 估测 DPPH 样品横向弛豫时间
+	\begin{enumerate}
+		\item 将扫场信号接入示波器CH1，磁共振信号接入CH2，示波器切换到X-Y模式，生成李萨如图。
+		\item 调节扫场相位至两个共振峰重合后，切回YT模式，记录信号并保存。
+		\item 直接从李萨如图拟合出横向弛豫时间 $T_2$，或记录半高宽 $\Delta t$，并通过扫场幅度 $B'$ 计算 $T_2$。
+		\item 备注栏记录是否成功保存信号、数据的平均处理情况及其他实验现象。
+	\end{enumerate}
+	
+	\item 测量波导波长及微波波长
+	\begin{enumerate}
+		\item 记录谐振腔的多个谐振点位置 $L_1$, $L_2$, $L_3$。
+		\item 根据相邻谐振点位置计算波导波长 $\lambda_g$，公式为：$\lambda_g = 2 (L_2 - L_1)$。
+		\item 通过公式计算微波波长 $\lambda$：$\lambda = \frac{\lambda_g}{\sqrt{1 - \left( \frac{\lambda_g}{\lambda_c} \right)^2}}$，其中 $\lambda_c$ 为截止波长。
+	\end{enumerate}
+\end{enumerate}	
+
+% 实验结果
+\subsubsection{Display}
+
+The results are shown in \cref{tab:tab1}.
+
+\begin{enumerate}
+	\item \begin{table}[h!]
+		\centering
+		\caption{Examples of table}
+		\label{tab:tab1}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			组1/序号i & 1 & 2 & 3 & 4 & 5 \\
+			$v_{1i}(m/s)$ & 1.26 & 1.08 & 1.00 & 0.75 & 0.38 \\
+			$f_{1i}(Hz)$ & 40073 & 40127 & 40105 & 40088 & 40066 \\
+			\hline
+			组2/序号i & 1 & 2 & 3 & 4 & 5 \\
+			$v_{2i}(m/s)$ & 1.21 & 1.06 & 0.99 & 0.52 & 0.57 \\
+			$f_{2i}(Hz)$ & 40143 & 40125 & 40084 & 40080 & 40067 \\
+			\hline
+			组3/序号i & 1 & 2 & 3 & 4 & 5 \\
+			$v_{3i}(m/s)$ & 1.15 & 0.98 & 0.78 & 0.59 & 0.36 \\
+			$f_{3i}(Hz)$ & 40135 & 40115 & 40092 & 40070 & 40044 \\
+			\hline
+		\end{tabular}
+	\end{table}		
+\end{enumerate}
+
+
+%---------------------------------------------------------------------
+% 原始数据
+\subsection{Original Data}
+The original data in the experimental notebook is shown in %\cref{} (signed).
+
+See the \textbf{Attachment} section for the clean of the experimental bench desktop (%\cref{}).
+
+Other raw data are shown in %\cref{}.
+
+
+%---------------------------------------------------------------------
+% 问题记录
+\subsection{Difficulties}
+\begin{enumerate}
+	\item 
+\end{enumerate}
+% ---
