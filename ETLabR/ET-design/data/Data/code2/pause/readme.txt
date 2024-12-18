@@ -1,0 +1,2 @@
+群里的第一个信号发生器面板对应pause0，pausemicro0是pause0放大后的图像
+第二个面板对应pause1hz，只有放大后的图像。之后用原来的探测器重新测量，结果对应pause1hzolddetector。
