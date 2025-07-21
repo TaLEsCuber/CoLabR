@@ -1,0 +1,62 @@
+% 相关版权与传播说明
+
+% 本文档基于 MIT License 进行许可，部分内容参考来源：https://huanyushi.github.io/posts/labreport-template/ 和 https://www.yykspace.com/cn/index.html，非完全原创。
+
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames, a4paper, 11pt]{article} 
+% 指定文档类型为 article，使用 A4 纸张，字体大小为 11pt，并启用 dvipsnames 和 svgnames 颜色名称，以支持多种颜色的使用。
+
+%---------------------------------------------------------------------
+% 设定
+%---------------------------------------------------------------------
+\let\icon\liuyin  
+\let\JMSection\ysySection
+\let\JMRef\ysyRef
+\let\JMEmph\ysyEmph
+\input{LabR_settings} 
+\usepackage{booktabs} % 用于绘制三线表
+\usepackage{siunitx}  % 用于科学计数法对齐
+%---------------------------------------------------------------------
+% 正文
+%---------------------------------------------------------------------
+
+\begin{document}
+\experimentNumber{E3} 
+\setExperimentHeader%自动生成页眉修改，自定义则如下所示
+% 自定义页眉
+%\fancyhead[R]{\textcolor{fgrayblue}{电阻热噪声玻尔兹曼常量测量}}
+% 自定义页脚内容
+%\fancyfoot[L]{\textcolor{fgrayblue}{黄罗琳，戴鹏辉，杨舒云，丁侯凯}}
+%\fancyfoot[R]{\textcolor{fgrayblue}{\textbf{\thepage}}}
+
+
+%给出当前实验组序号
+% 实验信息列表：
+% E1: 低温技术平台与高温超导研究
+% E2: ECDL外腔式半导体激光器实验
+% E3: 光泵磁共振实验
+% E4: 晶体声光电光磁光实验
+% E5: 双光子纠缠源研究和量子非局域性验证实验
+% E6: 散射光成像实验
+% E9: 自主研发光泵磁共振实验
+% E10: 光纤特性研究与应用
+
+
+% 实验报告主体部分，包含封面、前言、预习报告、实验主体内容以及附录。
+
+    % 封面（主要修改实验参与人员和封面插图）
+    \include{contents/title}
+    
+    % 前言（填写实验基本信息）
+    \include{contents/front}
+    
+    % 预习报告部分
+    \include{contents/pre}
+    
+    % 主要实验内容
+    \include{contents/body}
+    
+    % 附录（包含补充材料、个人签名、实验台整理情况、原始数据记录、实验附表、代码及参考文献）
+    \include{contents/appendix}
+    
+\end{document}

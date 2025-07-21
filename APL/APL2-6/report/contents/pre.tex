@@ -1,0 +1,211 @@
+% !TEX root = ../main.tex
+
+% 预习报告	
+\clearpage
+\setcounter{section}{0}
+\section{预习报告}
+\vspace{-0.7cm} % 负值缩小间距
+\noindent\textcolor{fgraygreen}{\rule{0.382\textwidth}{2pt} }
+\vspace{7pt}
+% 【看这里】可用\ysySection{预习报告}一键实现
+
+\subsection{实验概述}
+
+本实验通过测量散射介质的点扩散函数和利用解卷积原理，定性探究散射光成像的机理。实验内容包括搭建几何光学成像装置、测量点扩散函数、采集未知物散斑，并利用维纳滤波等方法恢复图像，同时探讨光学记忆效应对成像恢复的影响。
+
+
+\subsection{实验用具}
+
+    \begin{table}[ht!]
+    \centering
+    \caption{实验用具清单}
+    \label{tab:apparatus}
+    \begin{tabularx}{\textwidth}{cllc}
+    \toprule
+    \textbf{编号} & \textbf{仪器用具名称} & \textbf{数量} & \textbf{主要参数（型号、规格等）} \\
+    \midrule
+    1 & 绿光LED & 1 & 
+    \begin{minipage}[t]{0.6\textwidth}
+    作为光源
+    \end{minipage} \\
+    \addlinespace
+    2 & 镂空板 & 1 & 
+    \begin{minipage}[t]{0.6\textwidth}
+    作为成像目标物
+    \end{minipage} \\
+    \addlinespace
+    3 & 散射片 & 4 & 
+    \begin{minipage}[t]{0.6\textwidth}
+    0.5°，1°，5°，10°
+    \end{minipage} \\
+    \addlinespace
+    4 & 相机 & 1 & 
+    \begin{minipage}[t]{0.6\textwidth}
+    用于记录图像
+    \end{minipage} \\
+    \addlinespace
+    5 & 镜头 & 1 & 
+    \begin{minipage}[t]{0.6\textwidth}
+    用于扩大视场
+    \end{minipage} \\
+    \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+
+
+\subsection{原理概述}
+\subsubsection{点扩散函数(Point Spread Function, PSF)}
+\textbf{定义：}光学系统的点扩散函数是指一个物面理想点光源通过光学系统后在像面上形成的三维光强分布。
+
+\textbf{物理意义：}由于光的波动性（衍射效应）及光学系统的像差，物面上的理想点光源（可用 $\delta$函数描述）在像面上会形成有限大小的光斑。PSF即为光学系统对点光源的脉冲响应函数，是评价光学系统成像质量的重要指标。
+
+\textbf{作用：}在空间平移不变的非相干成像系统中，成像过程可表示为物体与PSF的卷积运算：
+\[ I_{\text{image}}(x,y) = O_{object}(x,y) \ast \text{PSF}(x,y) \]
+通过测量PSF可以定量评估系统的分辨率、调制传递函数(MTF)等性能参数。在计算成像中，PSF是图像复原的关键先验知识。
+
+\textbf{影响因素：}
+\begin{itemize}
+    \item 衍射极限：$\text{PSF}_{\text{diffraction}}(r) \propto \left[\frac{J_1(\pi r/\lambda F\#)}{\pi r/\lambda F\#}\right]^2$
+    \item 几何像差（球差、彗差、像散等）
+    \item 散射效应（介质不均匀性）
+\end{itemize}
+
+
+
+% \subsubsection{角度光学记忆效应(Angular Memory Effect)}
+
+%     \textbf{定义：}当入射光在散射介质表面发生$\theta \leq \lambda/(2\pi L)$的角度偏转时（$L$为散射介质厚度），出射散斑场将产生刚性平移而非完全重构的现象。
+
+%     \textbf{物理机制：}源于散射介质中传播矩阵的特征值分布特性，在相关角度范围内满足：
+%     \[ C(\Delta\theta) = \langle E(\theta)E^*(\theta+\Delta\theta) \rangle \approx \text{sinc}^2\left(\frac{kL\Delta\theta}{2}\right) \]
+%     其中$k=2\pi/\lambda$为波数。
+
+%     \textbf{应用：}
+%     \begin{itemize}
+%         \item 透过散射介质成像（记忆效应成像）
+%         \item 光学相位共轭
+%         \item 散斑自相关成像（需满足$\Delta\theta < \lambda/L$）
+%     \end{itemize}
+
+
+
+\subsubsection{角度光学记忆效应（Angular Memory Effect）}
+
+    \textbf{定义：}当入射光在散射介质表面发生$\theta \leq \lambda/(2\pi L)$的角度偏转时（$L$为散射介质厚度），出射散斑图样不会完全重构，而是产生刚性平移的现象。该现象说明了散射系统在小角度扰动下仍保留了部分“记忆”。
+
+    \textbf{物理机制：}该效应源于散射介质中传播矩阵的统计特性。当入射角发生微小变化时，光在介质内部的传播路径仅发生微调，导致出射场的分布形状保持不变，仅平移而已。在数学上，出射场之间的相关性可以表示为：
+    \[
+    C(\Delta\theta) = \langle E(\theta)E^*(\theta+\Delta\theta) \rangle \approx \text{sinc}^2\left(\frac{kL\Delta\theta}{2}\right)
+    \]
+    其中，$E(\theta)$为入射角$\theta$时的出射电场，$k = 2\pi/\lambda$为波数，$\langle \cdot \rangle$表示对不同散斑点的平均。该表达式表明，当$\Delta \theta$足够小时，$C(\Delta \theta)$保持较高的相关性，即出射图样相似；而超过一定角度后，相关性迅速衰减。
+
+    \textbf{记忆角度范围：}该效应通常在角度偏转$\Delta \theta \lesssim \lambda / L$的范围内显著。角度越小，记忆越强，平移特征越明显。
+
+    \textbf{应用：}
+    \begin{itemize}
+        \item \textbf{透过散射介质成像：}利用散斑图的角度记忆特性，在不知道介质内部结构的前提下，通过偏转入射角实现目标信息的重建，即记忆效应成像。
+        \item \textbf{光学相位共轭：}结合角度记忆效应，可实现散射场的逆传播与波前重构，有助于散射环境下的光学自聚焦。
+        \item \textbf{散斑自相关成像：}在$\Delta\theta < \lambda/L$条件下，输出散斑的自相关函数包含目标物信息，可实现无透镜散斑成像。
+    \end{itemize}
+
+
+
+
+% \subsubsection{平移光学记忆效应(Translational Memory Effect)}
+% \textbf{定义：}当入射光在散射介质表面发生横向位移$\Delta r \leq \lambda/\pi$时，出射散斑场产生对应平移的现象。
+
+% \textbf{特性：}
+% \begin{itemize}
+%     \item 与介质厚度无关
+%     \item 平移范围仅取决于波长（典型值$\sim\lambda$量级）
+%     \item 满足位移-相位关系：$\Delta\phi = k\Delta r\cdot\sin\theta$
+% \end{itemize}
+
+% \textbf{应用：}
+% \begin{itemize}
+%     \item 散斑追踪技术
+%     \item 超分辨率定位成像
+%     \item 波前传感
+% \end{itemize}
+
+
+\subsubsection{平移光学记忆效应（Translational Memory Effect）}
+
+    \textbf{定义：}当入射光束在空间上沿横向方向发生微小平移时（而非角度偏转），在一定条件下，出射的散斑图样仍不会发生完全重构，而是随入射光束同步平移的现象，被称为“平移光学记忆效应”。
+
+    \textbf{物理机制：}该效应的存在依赖于散射介质中**散射路径的空间相干性**。当光束的横向位移 $\Delta x$ 小于某一相关长度（即光束在介质内部的散射路径投影仍有显著重合）时，介质对入射波前的响应仍具有较强的保真性，因此出射散斑场的结构保持不变，仅发生横向平移。理论上，其相关函数可表示为：
+    \[
+    C(\Delta x) = \langle E(x)E^*(x+\Delta x) \rangle \approx \text{sinc}^2\left(\frac{k \Delta x \theta}{2} \right)
+    \]
+    其中，$x$为入射位置，$\Delta x$为空间平移，$\theta$为散射角度，$k=2\pi/\lambda$为波数。
+
+    \textbf{有效平移范围：}有效的平移范围受限于入射光束的空间相干长度以及介质的厚度与散射强度。在高度多次散射的厚介质中，该效应通常不如角度记忆效应明显，平移范围较小。
+
+    \textbf{应用：}
+    \begin{itemize}
+        \item \textbf{光束扫描成像：}利用入射光的横向平移与出射散斑的对应平移关系，可以实现快速无透镜成像。
+        \item \textbf{波前调控优化：}结合平移记忆效应与角度记忆效应，可用于提升波前优化算法对整个视场的泛化能力。
+        \item \textbf{光学神经网络训练：}基于平移不变性的训练机制，可以提升系统对空间位移的鲁棒性。
+    \end{itemize}
+
+
+
+
+
+
+\subsubsection{解卷积算法}
+成像模型表示为：
+\[ I(x,y) = [O \ast \text{PSF}](x,y) + N(x,y) \]
+其中$N(x,y)$为加性噪声。
+
+\textbf{常见算法：}
+\begin{enumerate}
+    \item \textbf{维纳滤波}：
+    \[ \hat{O}(u,v) = \left[ \frac{\text{PSF}^*(u,v)}{|\text{PSF}(u,v)|^2 + K} \right] I(u,v) \]
+    其中$K = S_N(u,v)/S_O(u,v)$为噪声-信号功率比
+    
+    \item \textbf{Richardson-Lucy算法}（最大似然估计）：
+    \[ O^{(k+1)}(x,y) = O^{(k)}(x,y) \left[ \left( \frac{I}{\text{PSF}\ast O^{(k)}} \right) \ast \text{PSF}(-x,-y) \right] \]
+    
+    \item \textbf{稀疏约束解卷积}：
+    \[ \min_O \| I - \text{PSF}\ast O \|_2^2 + \lambda \| \Psi O \|_1 \]
+    $\Psi$为稀疏变换（如小波、TV正则化）
+\end{enumerate}
+
+\textbf{实验注意事项：}
+\begin{itemize}
+    \item PSF标定需使用亚分辨率荧光微球（直径$<\lambda/2\text{NA}$）
+    \item 信噪比(SNR)需大于20dB以保证解卷积稳定性
+    \item 需考虑光学系统的空间变化性（非均匀PSF）
+\end{itemize}
+\subsection{前思考题}
+\begin{question}
+	为什么只有在记忆效应范围内才能恢复成像？
+\end{question}
+光学记忆效应之所以存在有效范围限制，本质上是由散射介质中光传播的波矢相关性决定的。当入射光角度变化在$\theta \leq \lambda/(2\pi L)$范围内时（$L$为散射介质厚度），散射介质传输矩阵的本征模式仍保持较强的空间相关性，使得出射光场与入射光场之间维持确定的线性变换关系。这一特性保证了光学系统点扩散函数（PSF）的空间平移不变性，从而使成像过程可表示为物函数与PSF的卷积运算，这是所有解卷积算法得以适用的数学基础。
+
+一旦超出该角度范围，多重散射导致的相位积累$\Delta\phi \sim kL\theta^2$将超过$\pi$弧度，使得传输矩阵的不同本征模式之间完全解耦。此时散斑图样会发生本质性改变而不仅是刚性平移，破坏了PSF的空间不变性，卷积模型不再成立。此外，从信息论角度看，超出记忆效应范围后，散射过程引入的熵增使系统信道容量急剧下降，导致物体信息被不可逆地湮没在噪声中。实际成像还受光学系统数值孔径的限制，有效视场$FOV \approx \lambda/(2\text{NA})$需与记忆效应范围匹配，才能保证在可恢复区域内既有足够的光学信息量，又能维持准确的卷积关系。
+\begin{question}
+	请简述卷积定理。
+\end{question}
+
+    \textbf{卷积定理}指出，两个函数在时域（或空域）中的卷积等价于它们在频域中的乘积，反之亦然。具体表述为：
+
+设$f(x)$和$g(x)$是两个可积函数，其傅里叶变换分别为$F(\omega)$和$G(\omega)$，则它们的卷积$h(x) = (f * g)(x)$的傅里叶变换$H(\omega)$等于各自傅里叶变换的乘积：
+$$
+H(\omega) = F(\omega) \cdot G(\omega)
+$$
+反之，两函数在时域中的乘积的傅里叶变换等于它们各自傅里叶变换的卷积：
+$$
+\mathcal{F}\{f(x) \cdot g(x)\} = F(\omega) * G(\omega)
+$$
+
+数学体现：
+    \begin{itemize}
+        \item 空域卷积：$I(x,y) = O(x,y) \ast \text{PSF}(x,y)$  
+        \item 频域乘积：$\mathcal{F}\{I\} = \mathcal{F}\{O\} \cdot \mathcal{F}\{\text{PSF}\}$  
+    \end{itemize}
+    
+

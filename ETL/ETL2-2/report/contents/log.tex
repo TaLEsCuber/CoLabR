@@ -1,0 +1,154 @@
+% !TEX root = ../main.tex
+
+% 实验记录	
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+		\hline
+		Major： & Physics & Grade： & 2022 \\
+		\hline
+		Name： & 杨舒云 \& 戴鹏辉 & Student number： & 22344020 \& 22344016\\
+		\hline
+		Room temperature： & 26\degree C & Experimental location： & A522 \\
+		\hline
+		Student's Signature：& \textbf{In Attachment} & Score： &\\
+		\hline
+		Experiment time：& 2024/10/16 & Teacher's Signature：&\\
+		\hline
+	\end{tabularx}
+\end{table}
+\section{测量放大器 \\ Experimental Record}
+
+
+%---------------------------------------------------------------------
+% 实验过程记录
+\subsection{Content, Procedures \& Results}
+
+	实验中我们使用“先差分后放大”的思路，将Model-D和Mo-A串联使用，来搭建差分放大器。
+
+	\begin{enumerate}
+		\item \textbf{测量差模放大倍数与共模放大倍数：}
+
+			首先设置信号发生器为两路相同的正弦波，频率$f = 1 \text{kHz}$，峰峰值$V_{pp} = 25.0 \text{mV}$，然后将两路信号相位差设置为180°，使用示波器测量输出信号的峰峰值为$V_{out} = 5.12 \text{V}$。
+
+			按照上面相同的参数设置信号发生器输出信号，并将两路信号设置至同相位，测量输出信号峰峰值为$V_{out} = 30.04 \text{mV}$。
+
+			由于两路信号是由不同的channel输出的，可能存在不相等的噪声。于是，我们将一路信号用三通管分成两路信号，接入测量放大器中，并将输入信号的峰峰值增加至$V_{in} = 10 \text{V}$，测量到的输出信号峰峰值为$V_{out} = 6.80 \text{mV}$
+
+		\item \textbf{放大倍数的极限值测量：}
+
+			为了实现1-100倍的放大倍数，需要注意将Model-A设置为反相放大器。
+
+			按照上面相同的参数设置信号发生器输出信号，测量差模放大倍数，得到最小输出信号峰峰值为：$V_{min} = 2.40 \text{mV}$。
+
+			最大不失真的输出信号峰峰值为：$V_{max} = 20.2 \text{V}$
+
+
+
+
+
+		\item \textbf{通频带测量：}
+		
+			我们在不同的频率下，测量差分放大器的输出信号大小，以此测量放大器的通频带。
+
+			测量数据如\cref{tbl:ET2-2-1}所示。
+
+			\begin{table}[htbp]
+				\centering
+				\begin{tblr}{
+				  cells = {c},
+				  vline{1-2,10} = {-}{},
+				  hline{1,3,5,7,9} = {-}{},
+				}
+				频率/Hz & 1     & 2     & 3      & 4      & 5      & 6      & 7      & 8       \\
+				输出/V & 5.440 & 5.400 & 5.400  & 5.400  & 5.440  & 5.440  & 5.400  & 5.400   \\
+				频率/Hz & 9     & 10    & 50     & 100    & 500    & 1000   & 2000   & 3000    \\
+				输出/V & 5.400 & 5.400 & 5.400  & 5.480  & 5.520  & 5.480  & 5.440  & 5.360   \\
+				频率/Hz & 4000  & 5000  & 6000   & 7000   & 8000   & 9000   & 10000  & 20000   \\
+				输出/V & 5.280 & 5.120 & 5.000  & 4.840  & 4.680  & 4.520  & 4.360  & 3.000   \\
+				频率/Hz & 50000 & 70000 & 100000 & 200000 & 300000 & 500000 & 800000 & 1000000 \\
+				输出/V & 1.380 & 1.010 & 0.700  & 0.360  & 0.248  & 0.152  & 0.100  & 0.078   
+				\end{tblr}
+				\caption{不同频率对应差分放大器的输出}
+				\label{tbl:ET2-2-1}
+			\end{table}
+
+			
+
+	\end{enumerate}
+
+
+% % 操作步骤
+% \subsubsection{Operations}
+% \begin{enumerate}
+% 	\item 
+% \end{enumerate}	
+
+% % 实验结果
+% \subsubsection{Display}
+
+% The results are shown in \cref{tab:tab1}.
+
+% \begin{enumerate}
+% 	\item \begin{table}[h]
+% 		\centering
+% 		\caption{Examples of table}
+% 		\label{tab:tab1}
+% 		\begin{tabular}{|c|c|c|c|c|c|}
+% 			\hline
+% 			组1/序号i & 1 & 2 & 3 & 4 & 5 \\
+% 			$v_{1i}(m/s)$ & 1.26 & 1.08 & 1.00 & 0.75 & 0.38 \\
+% 			$f_{1i}(Hz)$ & 40073 & 40127 & 40105 & 40088 & 40066 \\
+% 			\hline
+% 			组2/序号i & 1 & 2 & 3 & 4 & 5 \\
+% 			$v_{2i}(m/s)$ & 1.21 & 1.06 & 0.99 & 0.52 & 0.57 \\
+% 			$f_{2i}(Hz)$ & 40143 & 40125 & 40084 & 40080 & 40067 \\
+% 			\hline
+% 			组3/序号i & 1 & 2 & 3 & 4 & 5 \\
+% 			$v_{3i}(m/s)$ & 1.15 & 0.98 & 0.78 & 0.59 & 0.36 \\
+% 			$f_{3i}(Hz)$ & 40135 & 40115 & 40092 & 40070 & 40044 \\
+% 			\hline
+% 		\end{tabular}
+% 	\end{table}		
+% \end{enumerate}
+
+
+%---------------------------------------------------------------------
+% 原始数据
+% \subsection{Original Data}
+% The original data in the experimental notebook is shown in %\cref{} (signed).
+
+% See the \textbf{Attachment} section for the clean of the experimental bench desktop (%\cref{}).
+
+% Other raw data are shown in %\cref{}.
+
+
+%---------------------------------------------------------------------
+% 问题记录
+% \clearpage
+\subsection{Difficulties}
+\begin{enumerate}
+	\item 若是要保证放大倍数最低能到 1 ， 一定要将Model-A设置为反相放大器。
+		\begin{itemize}
+			\item 反相放大器的放大倍数公式为
+				\[
+					A_v = -\frac{R_f}{R_i}
+				\]
+				其视具体的反馈电阻而定，最小可以取到0。
+
+			\item 而对于同相放大器，其放大倍数公式为：
+				\[
+					A_v = 1 + \frac{R_f}{R_i}
+				\]
+				其最小也只能取到1。
+
+		\end{itemize}
+
+		而我们的放大器由Model-D和Model-A串联构成，Model-D的放大倍数为固定增益的10倍。
+
+		所以。只有反相放大器才能够在我们的差分放大器中，实现1-100的放大倍数。
+
+	\item 在测量通频带时，当改变信号发生器参数后，一定要点击同相位，否则两个信号之间会有随机的相位差，就不是我们所希望测量的差模信号或共模信号了。
+\end{enumerate}
+% ---

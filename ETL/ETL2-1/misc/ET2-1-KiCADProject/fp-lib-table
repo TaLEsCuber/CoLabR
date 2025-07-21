@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ET2-1-KiCADProject")(type "KiCad")(uri "C:/Workspace/CoLabR/ETLabR/ET2-1/miscellaneous/ET2-1-KiCADProject.pretty")(options "")(descr ""))
+)
